@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+class App extends Component {
+  constructor(){
 
-function App() {
+super()
+this.state={
+Messages:["a","b"]
+}
+
+  }
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {
+      this.state.Messages.length> 0 &&
+        <h2><marquee>Hello Masood</marquee> You have {this.state.Messages.length}unread messages!</h2>
+      }
     </div>
   );
 }
-
+}
 export default App;
