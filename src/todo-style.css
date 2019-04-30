@@ -1,8 +1,6 @@
 
-body {
-import todo-styles.css    background-color: whitesmoke;
+body{import todo-styles.css    background-color: whitesmoke;
 }
-
 .todo-list {
     background-color: white;
     margin: auto;
